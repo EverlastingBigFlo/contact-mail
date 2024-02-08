@@ -8,6 +8,8 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    
+    @include('includes/nav.blade.php')
+    @yield('content')
+    @include('includes/footer.blade.php')
 </body>
 </html>
