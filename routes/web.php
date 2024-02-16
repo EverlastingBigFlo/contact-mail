@@ -20,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/contact', [IndexController::class, 'contact'])->name('contact');
+
+
