@@ -10,9 +10,7 @@
                         <h1 class="text-2xl font-semibold capitalize lg:text-3xl">Ultimate design solution</h1>
 
                         <p class="max-w-xl mt-6">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem quo
-                            aliquid molestiae hic incidunt beatae placeat accusantium! Alias ex quisquam ab tempora. Ratione
-                            autem doloremque ducimus numquam doloribus, error sed.
+                            Thank you for your interest in contacting us. We value your feedback, inquiries, and suggestions. Please feel free to reach out to us using the contact information provided below or by filling out the contact form.
                         </p>
 
                         <button
