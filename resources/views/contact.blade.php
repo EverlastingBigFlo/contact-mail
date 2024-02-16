@@ -81,7 +81,7 @@
                                 to hear from you
                             </p>
 
-                            <form action="{{ route('')}}" class="mt-6">
+                            <form action="{{ route('contactCommand')}}" class="mt-6" method="POST">
                                 @csrf
                                 <div class="flex-1">
                                     <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200 ">Full Name</label>

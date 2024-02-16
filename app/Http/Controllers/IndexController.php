@@ -14,4 +14,14 @@ class IndexController extends Controller
     {
         return view('contact');
     }
+    public function contactCommand(Request $request)
+    {
+        // set rules here
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email'
+        ]);
+
+        return "Thank you for contacting us";
+    }
 }
