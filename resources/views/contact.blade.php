@@ -7,10 +7,12 @@
             <div class="container flex flex-col flex-1 px-6 py-12 mx-auto">
                 <div class="flex-1 lg:flex lg:items-center lg:-mx-6">
                     <div class="text-white lg:w-1/2 lg:mx-6">
-                        <h1 class="text-2xl font-semibold capitalize lg:text-3xl">Ultimate design solution</h1>
+                        <h1 class="text-2xl font-semibold capitalize lg:text-5xl">Ultimate design solution</h1>
 
                         <p class="max-w-xl mt-6">
-                            Thank you for your interest in contacting us. We value your feedback, inquiries, and suggestions. Please feel free to reach out to us using the contact information provided below or by filling out the contact form.
+                            Thank you for your interest in contacting us. We value your feedback, inquiries, and
+                            suggestions. Please feel free to reach out to us using the contact information provided below or
+                            by filling out the contact form.
                         </p>
 
                         <button
@@ -68,6 +70,7 @@
                         </div>
                     </div>
 
+                    {{-- form aspect --}}
                     <div class="mt-8 lg:w-1/2 lg:mx-6">
                         <div
                             class="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
