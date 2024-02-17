@@ -106,7 +106,7 @@
 
                                 <div class="w-full mt-6">
                                     <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
-                                    <textarea
+                                    <textarea name="message"
                                         class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-transparent border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                                         placeholder="Message"></textarea>
                                 </div>

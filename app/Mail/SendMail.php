@@ -16,10 +16,11 @@ class SendMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+    //    $this->message=$data['message'];
     }
+
 
     /**
      * Get the message envelope.
