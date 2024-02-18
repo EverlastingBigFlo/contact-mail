@@ -1,6 +1,12 @@
 @extends('layouts/layouts')
 
 @section('content')
+    @if (session('success'))
+        <div class="bg-green-200 text-green-800 rounded-lg px-4 py-2 mt-4">
+            {{ session('success') }}
+        </div>
+    @endif
+
     <section class="min-h-screen bg-cover "
         style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
         <div class="flex flex-col min-h-screen bg-black/60">
@@ -69,12 +75,8 @@
                             </div>
                         </div>
                     </div>
-                    
-                    @if(session('success'))
-                    <div class="bg-green-200 text-green-800 rounded-lg px-4 py-2 mt-4">
-                        {{ session('success') }}
-                    </div>
-                @endif
+
+
 
                     {{-- form aspect --}}
                     <div class="mt-8 lg:w-1/2 lg:mx-6">
@@ -87,28 +89,30 @@
                                 to hear from you
                             </p>
 
-                            <form action="{{old('contact.submit')}}"  class="mt-6" method="POST">
+                            <form action="{{ old('contact.submit') }}" class="mt-6" method="POST">
                                 @csrf
                                 <div class="flex-1">
                                     <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200 ">Full Name</label>
-                                    <input type="text" name="name" value="{{old('name')}}" placeholder="Full Name"
+                                    <input type="text" name="name" value="{{ old('name') }}" placeholder="Full Name"
                                         class="block w-full px-5 py-3 mt-2 text-gray-700 bg-transparent border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
-                                        <small style="color: red">
-                                            @error('name')
-                                            {{$message}}
-                                        @enderror</small>
-                                    </div>
+                                    <small style="color: red">
+                                        @error('name')
+                                            {{ $message }}
+                                        @enderror
+                                    </small>
+                                </div>
 
                                 <div class="flex-1 mt-6">
                                     <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
-                                    <input type="email" name="email" value="{{ old('email') }}" placeholder="Please fill in your email"
-                                    class="block w-full px-5 py-3 mt-2 text-gray-700 bg-transparent border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />                                
+                                    <input type="email" name="email" value="{{ old('email') }}"
+                                        placeholder="Please fill in your email"
+                                        class="block w-full px-5 py-3 mt-2 text-gray-700 bg-transparent border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
                                     <small style="color: red">
-                                            @error('email')
-                                                {{$message}}
-                                            @enderror
+                                        @error('email')
+                                            {{ $message }}
+                                        @enderror
                                     </small>
-                                    </div>
+                                </div>
 
                                 <div class="w-full mt-6">
                                     <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>

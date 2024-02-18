@@ -14,14 +14,18 @@ class SendMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $requestData;
+    public $name;
+    public $email;
+    public $message;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($requestData)
+    public function __construct($name, $email, $message)
     {
-        $this->requestData = $requestData;
+        $this->name = $name;
+        $this->email = $email;
+        $this->message = $message;
     }
 
     /**
@@ -60,11 +64,15 @@ class SendMail extends Mailable
      *
      * @return $this
      */
-    public function build()
-    {
-        return $this->view('emails.contact')
-                    ->subject('We are testing email');
-    }
+        public function build()
+        {
+            return $this->view('emails.formcont')
+            ->with([
+                'name' => $this->name,
+                'email' => $this->email,
+                'message' => $this->message,
+            ]);
+        }
 }
 
 
