@@ -1,7 +1,9 @@
 <?php
 namespace App\Http\Controllers;
 
-
+use App\Http\Controllers\IndexController;
+use App\Mail\SendMail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,4 +27,6 @@ Route::get('/contact', [IndexController::class, 'contact'])->name('contact');
 
 // to get the contact us post data
 Route::post('/contact', [IndexController::class, 'contactCommand'])->name('contactCommand');
+
+
 

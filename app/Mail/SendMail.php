@@ -6,31 +6,34 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Mail\Mailables\Envelope; 
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Address;
 
 class SendMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $requestData;
+
     /**
      * Create a new message instance.
      */
-    public function __construct($data)
+    public function __construct($requestData)
     {
-    //    $this->message=$data['message'];
+        $this->requestData = $requestData;
     }
-
 
     /**
      * Get the message envelope.
      */
-    public function envelope(): Envelope
-    {
-        return new Envelope(
-            subject: 'Send Mail',
-        );
-    }
+    // public function envelope($request): Envelope
+    // {
+    //     return new Envelope(
+    //         from: new Address($request, 'Samuel Laravel'),
+    //         subject: 'We are testing email',
+    //     );
+    // }
 
     /**
      * Get the message content definition.
@@ -38,7 +41,7 @@ class SendMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'contact',
         );
     }
 
@@ -51,4 +54,18 @@ class SendMail extends Mailable
     {
         return [];
     }
+
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
+    public function build()
+    {
+        return $this->view('emails.contact')
+                    ->subject('We are testing email');
+    }
 }
+
+
+

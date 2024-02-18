@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\SendMail;
 use App\Models\contacts;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class IndexController extends Controller
 {
@@ -15,26 +17,22 @@ class IndexController extends Controller
     {
         return view('contact');
     }
+
     public function contactCommand(Request $request)
+    
     {
-        // set rules here
         $request->validate([
-            'name' => 'required',
+            'name' => 'required|string',
             'email' => 'required|email',
-            'message' => 'required',
+            'message' => 'required|string',
         ]);
 
-        // get user email and email to the database
-        $contact = new contacts();
-        $contact->name = $request->name;
-        $contact->email = $request->email;
-        $contact->message = $request->message;
-        $contact->save();
+        // Send email
+        Mail::to('anjorin199@gmail.com')->send(new SendMail($request));
 
 
-        // send mail
-        
-
-        return 'Thank you for contacting us';
+        return redirect()->back()->with('success', 'Your message has been sent successfully.');
     }
 }
+
+
