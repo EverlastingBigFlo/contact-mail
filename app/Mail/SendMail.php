@@ -13,7 +13,7 @@ use Illuminate\Queue\SerializesModels;
 class SendMail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $mymessage,$username,$useremail;
+    public $mymessages,$username,$useremail;
 
 
 
@@ -21,10 +21,14 @@ class SendMail extends Mailable
      * Create a new message instance.
      */
     public function __construct($request)
-    {
-        $this->mymessage=$request['mymessage'];
+    {    
+        
+        // dd($request);
+        $this->mymessages=$request['mymessage'];
         $this->username=$request['username'];
         $this->useremail=$request['useremail'];
+       
+        
     }
 
     /**
@@ -42,9 +46,10 @@ class SendMail extends Mailable
      * Get the message content definition.
      */
     public function content(): Content
-    {
+    {       
         return new Content(
             view: 'contact',
+            with:['message'=>$this->mymessages]
         );
     }
 

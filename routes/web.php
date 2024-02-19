@@ -25,7 +25,7 @@ Route::get('/', function () {
 Route::get('/contact', [IndexController::class, 'contact'])->name('contact');
 
 
-// to get the contact us post data
+// to post data
 Route::post('/contact', [IndexController::class, 'contactCommand'])->name('contactCommand');
 
 

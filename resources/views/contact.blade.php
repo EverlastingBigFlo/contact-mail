@@ -7,6 +7,7 @@
         </div>
     @endif
 
+
     <section class="min-h-screen bg-cover "
         style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
         <div class="flex flex-col min-h-screen bg-black/60">
@@ -19,6 +20,8 @@
                             Thank you for your interest in contacting us. We value your feedback, inquiries, and
                             suggestions. Please feel free to reach out to us using the contact information provided below or
                             by filling out the contact form.
+                        </p>
+                        <p>
                         </p>
 
                         <button

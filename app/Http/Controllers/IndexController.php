@@ -30,7 +30,7 @@ class IndexController extends Controller
 
     
         // Retrieve form data
-        // $data=['mymessage'=>'Hello, your one time password is ' .rand(100000,900000), 'username'=>'Samuel'];
+        $request=['mymessage'=>'message', 'username'=>'name', 'useremail'=>'email'];
 
 
         // Send email
