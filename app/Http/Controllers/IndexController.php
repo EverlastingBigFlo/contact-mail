@@ -17,23 +17,21 @@ class IndexController extends Controller
     {
         return view('contact');
     }
-  
+
     public function contactcont(Request $request)
     {
-        // Validate the request data if needed
-
-        $data = [
-            'name' => $request->input('name'),
-            'email' => $request->input('email'),
-            'message' => $request->input('message')
-        ];
-
-        // Redirect back with success message
-        return view('contactcont')->with($data);
-
-        // send mail
+        // Retrieve the data passed from the redirect
+        $data = $request->get('data');
+        
+        // Send mail
         Mail::to('anjorin199@gmail.com')->send(new SendMail($data));
+        
+        // Render the view with the submitted data
+        return view('contactcont', compact('data'));
     }
+    
+    
+    
 
     public function contactCommand(Request $request)
     {
@@ -47,6 +45,9 @@ class IndexController extends Controller
         $data = $request->only('name', 'email', 'message');
     
         // Redirect to contactcont route with the data
-        return redirect()->route('contactcont', $data);
+        return redirect()->route('contactcont', ['data' => $data]);
     }
+    
+
+    
 }

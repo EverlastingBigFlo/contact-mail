@@ -13,20 +13,17 @@ use Illuminate\Queue\SerializesModels;
 class SendMail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $mymessages,$username,$useremail;
+    // public $mymessages,$username,$useremail;
 
 
 
     /**
      * Create a new message instance.
      */
-    public function __construct($request)
+    public function __construct()
     {    
         
-        // dd($request);
-        $this->mymessages=$request['mymessage'];
-        $this->username=$request['username'];
-        $this->useremail=$request['useremail'];
+
        
         
     }
