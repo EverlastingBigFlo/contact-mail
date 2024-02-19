@@ -5,39 +5,38 @@ namespace App\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope; 
-use Illuminate\Queue\SerializesModels;
 use Illuminate\Mail\Mailables\Address;
+use Illuminate\Mail\Mailables\Content;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Queue\SerializesModels;
 
 class SendMail extends Mailable
 {
     use Queueable, SerializesModels;
+    public $mymessage,$username,$useremail;
 
-    public $name;
-    public $email;
-    public $message;
+
 
     /**
      * Create a new message instance.
      */
-    public function __construct($name, $email, $message)
+    public function __construct($request)
     {
-        $this->name = $name;
-        $this->email = $email;
-        $this->message = $message;
+        $this->mymessage=$request['mymessage'];
+        $this->username=$request['username'];
+        $this->useremail=$request['useremail'];
     }
 
     /**
      * Get the message envelope.
      */
-    // public function envelope($request): Envelope
-    // {
-    //     return new Envelope(
-    //         from: new Address($request, 'Samuel Laravel'),
-    //         subject: 'We are testing email',
-    //     );
-    // }
+    public function envelope(): Envelope
+    {
+        return new Envelope(
+            from: new Address('anjorin199@gmail.com'),
+            subject: 'Contacting',
+        );
+    }
 
     /**
      * Get the message content definition.
@@ -58,22 +57,4 @@ class SendMail extends Mailable
     {
         return [];
     }
-
-    /**
-     * Build the message.
-     *
-     * @return $this
-     */
-        public function build()
-        {
-            return $this->view('emails.formcont')
-            ->with([
-                'name' => $this->name,
-                'email' => $this->email,
-                'message' => $this->message,
-            ]);
-        }
 }
-
-
-
