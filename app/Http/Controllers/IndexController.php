@@ -18,25 +18,35 @@ class IndexController extends Controller
         return view('contact');
     }
   
+    public function contactcont(Request $request)
+    {
+        // Validate the request data if needed
+
+        $data = [
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'message' => $request->input('message')
+        ];
+
+        // Redirect back with success message
+        return view('contactcont')->with($data);
+
+        // send mail
+        Mail::to('anjorin199@gmail.com')->send(new SendMail($data));
+    }
 
     public function contactCommand(Request $request)
     {
-        // Validate form data
         $request->validate([
             'name' => 'required|string',
             'email' => 'required|email',
             'message' => 'required|string',
         ]);
-
     
-        // Retrieve form data
-        $request=['mymessage'=>'message', 'username'=>'name', 'useremail'=>'email'];
-
-
-        // Send email
-        Mail::to('anjorin199@gmail.com')->send(new SendMail($request));
+        // Get the validated data
+        $data = $request->only('name', 'email', 'message');
     
-        // Redirect back with success message
-        return redirect()->back()->with('success', 'Your message has been sent successfully.');
+        // Redirect to contactcont route with the data
+        return redirect()->route('contactcont', $data);
     }
 }

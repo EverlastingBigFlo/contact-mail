@@ -48,8 +48,7 @@ class SendMail extends Mailable
     public function content(): Content
     {       
         return new Content(
-            view: 'contact',
-            with:['message'=>$this->mymessages]
+            view: 'contactcont',
         );
     }
 

@@ -17,16 +17,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-// to load the contact us page
+// Load the contact us page
 Route::get('/contact', [IndexController::class, 'contact'])->name('contact');
 
-
-// to post data
+// Handle form submission
 Route::post('/contact', [IndexController::class, 'contactCommand'])->name('contactCommand');
+
+// Route to display submitted form data
+Route::get('/contactcont', [IndexController::class, 'contactcont'])->name('contactcont');
+
 
 
 
