@@ -1,25 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&family=Kode+Mono:wght@400..700&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&family=Kode+Mono:wght@400..700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .input{
-    @apply  block w-full mt-1 text-lg border-b border-solid border-black border-opacity-40 text-center};
+@apply block w-full mt-1 text-lg border-b border-solid border-black border-opacity-40 text-center};
 
-    .label{
-        label {
-            display: block;
-            width: 260px;
-            margin: 25px auto 0;
-            text-align: center;
-        }
-    
-        label span {
-            font-size: 12px;
-            color: #cfcfcf;
-            text-transform: uppercase;
-        }
+.label{
+@apply block w-[260px] mt-25 mx-auto text-center};
 
-        @apply block w-[260px] m
-    }
+.labelSpan{
+@apply text-sm text-[#cfcfcf] uppercase
+}
