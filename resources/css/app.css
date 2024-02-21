@@ -9,7 +9,7 @@ url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700
 @apply block w-full mt-1 text-lg border-b border-solid border-black border-opacity-40 text-center};
 
 .label{
-@apply block w-[260px] mt-25 mx-auto text-center};
+@apply block w-[260px] mt-6 mx-auto text-center};
 
 .labelSpan{
 @apply text-sm text-[#cfcfcf] uppercase};
