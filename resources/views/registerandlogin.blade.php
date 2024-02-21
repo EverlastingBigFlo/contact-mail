@@ -248,11 +248,12 @@
         }
 
         .sign-up {
-            -webkit-transform: translate3d(-900px, 0, 0);
             transform: translate3d(-900px, 0, 0);
         }
 
-      
+        .cont.s--signup .sign-up {
+            transform: translate3d(0, 0, 0);
+        }
     </style>
 
 
@@ -291,10 +292,6 @@
                     <span class="m--in">Sign In</span>
                 </div>
             </div>
-            .cont.s--signup .sign-up {
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
             <div class="form sign-up">
                 <h2 class="w-full text-2xl text-center">Create your Account</h2>
                 <label class="label">
