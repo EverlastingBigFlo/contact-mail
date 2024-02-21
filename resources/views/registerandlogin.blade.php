@@ -280,7 +280,7 @@
     </div>
     <div class="sub-cont">
         <div class="img">
-            .img__text {
+            {{-- .img__text {
                 z-index: 2;
                 position: absolute;
                 left: 0;
@@ -293,7 +293,7 @@
                 transition: -webkit-transform 1.2s ease-in-out;
                 transition: transform 1.2s ease-in-out;
                 transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
-            }
+            } --}}
          
             <div class="img__text m--up z-10 absolute left-0 top-20 w-full px-20 text-center text-white transition-transform duration-1200 ease-in-out">
 
