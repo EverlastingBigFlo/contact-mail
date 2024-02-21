@@ -28,7 +28,8 @@ Route::get('/contact', [IndexController::class, 'contact'])->name('contact');
 // Handle form submission
 Route::post('/contact', [IndexController::class, 'contactCommand'])->name('contactCommand');
 
+// load the register and login form page
 
-
+Route::get('/registerandlogin', [IndexController::class, 'registerandlogin'])->name('contact');
 
 

@@ -21,6 +21,7 @@ class IndexController extends Controller
     
     
 
+    // to get the submit request for sent to email
     public function contactCommand(Request $request)
     {
         // Validate data from form
@@ -41,5 +42,10 @@ class IndexController extends Controller
     }
     
 
+    // to display register and login page
+    public function registerandlogin()
+    {
+        return view('registerandlogin');
+    }
     
 }
