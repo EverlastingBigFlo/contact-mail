@@ -294,7 +294,7 @@
 
 <br>
 <br>
-<div class="cont fon">
+<div class="cont">
     {{-- for login page --}}
     <div class="form sign-in">
         <h2>Welcome</h2>
