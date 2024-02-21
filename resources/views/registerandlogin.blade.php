@@ -229,18 +229,7 @@
         text-align: center;
     }
 
-    label {
-        display: block;
-        width: 260px;
-        margin: 25px auto 0;
-        text-align: center;
-    }
-
-    label span {
-        font-size: 12px;
-        color: #cfcfcf;
-        text-transform: uppercase;
-    }
+ 
 
 
 
@@ -288,12 +277,13 @@
 <div class="cont font-kode">
     <div class="form sign-in">
         <h2>Welcome</h2>
-        <label>
+      
+        <label class="label">
             <span>Email</span>
          
             <input class="input" type="email" />
         </label>
-        <label>
+        <label class="label">
             <span>Password</span>
             <input class="input" type="password" />
         </label>
@@ -318,15 +308,15 @@
         </div>
         <div class="form sign-up">
             <h2>Create your Account</h2>
-            <label>
+            <label class="label">
                 <span>Name</span>
                 <input class="input" type="text" />
             </label>
-            <label>
+            <label class="label">
                 <span>Email</span>
                 <input class="input" type="email" />
             </label>
-            <label>
+            <label class="label">
                 <span>Password</span>
                 <input class="input" type="password" />
             </label>
