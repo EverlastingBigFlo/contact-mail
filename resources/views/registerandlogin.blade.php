@@ -7,7 +7,6 @@
         padding: 0;
     }
 
-
     input,
     button {
         border: none;
@@ -295,7 +294,7 @@
 
 <br>
 <br>
-<div class="cont">
+<div class="cont fon">
     {{-- for login page --}}
     <div class="form sign-in">
         <h2>Welcome</h2>
