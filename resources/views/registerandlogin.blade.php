@@ -233,17 +233,6 @@
             color: #455a81;
         }
 
-        .sign-in {
-            -webkit-transition-timing-function: ease-out;
-            transition-timing-function: ease-out;
-        }
-
-        /* .cont.s--signup .sign-in {
-            transition-timing-function: ease-in-out;
-            transition-duration: 1.2s;
-            transform: translate3d(640px, 0, 0);
-        } */
-
 
         .cont.s--signup .sign-up {
             transform: translate3d(0, 0, 0);
@@ -253,7 +242,7 @@
 
 
     <div class="cont font-kode">
-        <div class="form sign-in">
+        <div class="form sign-in transition-transform duration-1200 ease-in-out transform translate-x-640">
             <h2 class="w-full text-2xl text-center">Welcome</h2>
 
             <label class="label">
