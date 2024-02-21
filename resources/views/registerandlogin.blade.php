@@ -223,11 +223,6 @@
         transform: translateY(72px);
     }
 
-    h2 {
-        width: 100%;
-        font-size: 26px;
-        text-align: center;
-    }
 
  
 
@@ -276,7 +271,7 @@
 
 <div class="cont font-kode">
     <div class="form sign-in">
-        <h2>Welcome</h2>
+        <h2 class="w-full text-2xl text-center">Welcome</h2>
       
         <label class="label">
             <span class="labelSpan">Email</span>
@@ -307,7 +302,7 @@
             </div>
         </div>
         <div class="form sign-up">
-            <h2>Create your Account</h2>
+            <h2 class="w-full text-2xl text-center">Create your Account</h2>
             <label class="label">
                 <span class="labelSpan">Name</span>
                 <input class="input" type="text" />
