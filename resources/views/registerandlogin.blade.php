@@ -242,15 +242,7 @@
         text-transform: uppercase;
     }
 
-    input {
-        display: block;
-        width: 100%;
-        margin-top: 5px;
-        padding-bottom: 5px;
-        font-size: 16px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-        text-align: center;
-    }
+
 
 
 
@@ -298,6 +290,15 @@
         <h2>Welcome</h2>
         <label>
             <span>Email</span>
+            input {
+                display: block;
+                width: 100%;
+                margin-top: 5px;
+                padding-bottom: 5px;
+                font-size: 16px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+                text-align: center;
+            }
             <input type="email" />
         </label>
         <label>
