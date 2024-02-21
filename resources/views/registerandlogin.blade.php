@@ -259,12 +259,7 @@
         color: #cfcfcf;
     }
 
-    .submit {
-        margin-top: 40px;
-        margin-bottom: 20px;
-        background: #d4af7a;
-        text-transform: uppercase;
-    }
+ 
 
     .fb-btn {
         border: 2px solid #d3dae9;
@@ -303,7 +298,7 @@
 
 
 
-<div class="cont">
+<div class="cont font-kode">
     <div class="form sign-in">
         <h2>Welcome</h2>
         <label>
@@ -315,7 +310,13 @@
             <input type="password" />
         </label>
         <p class="forgot-pass">Forgot password?</p>
-        <button type="button" class="submit">Sign In</button>
+        .submit {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            background: #d4af7a;
+            text-transform: uppercase;
+        }
+        <button type="button" class=" mt-[40px] mb-[20px] bg-[d4af7a] ">Sign In</button>
 
     </div>
     <div class="sub-cont">
@@ -347,7 +348,7 @@
                 <span>Password</span>
                 <input type="password" />
             </label>
-            <button type="button" class="submit">Sign Up</button>
+            <button type="button" class=" mt-[40px] mb-[20px] bg-[d4af7a] ">Sign Up</button>
 
         </div>
     </div>
