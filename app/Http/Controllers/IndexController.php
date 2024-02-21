@@ -35,14 +35,11 @@ class IndexController extends Controller
     
         // Redirect to contactcont route with the data
         Mail::to('anjorin199@gmail.com')->send(new SendMail($data));
-        return view('contactcont');
+
+        return view('thankyou');
 
     }
     
-    // public function contactcont()
-    // {
-    //     return view('contactcont');
-    // }
 
     
 }

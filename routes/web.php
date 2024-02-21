@@ -28,8 +28,6 @@ Route::get('/contact', [IndexController::class, 'contact'])->name('contact');
 // Handle form submission
 Route::post('/contact', [IndexController::class, 'contactCommand'])->name('contactCommand');
 
-// Route to display submitted form data
-Route::get('/contactcont', [IndexController::class, 'contactcont'])->name('contactcont');
 
 
 
