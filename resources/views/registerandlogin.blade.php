@@ -246,7 +246,7 @@
                 </div>
                 <div
                     class="img__btn elative overflow-hidden z-10 flex items-center justify-center w-100 h-36 mx-auto 
-                    bg-transparent text-white uppercase text-lg cursor-pointer after:[]">
+                    bg-transparent text-white uppercase text-lg cursor-pointer after:content-['']">
                     content: '';
                     z-index: 2;
                     position: absolute;
