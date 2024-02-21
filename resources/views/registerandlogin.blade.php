@@ -295,11 +295,11 @@
                 transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
             } --}}
          
-            <div class="img__text m--up z-10 absolute left-0 top-20 w-full px-20 text-center text-white transition-transform duration-1200 ease-in-out">
+            <div class="img__text m--up z-10 absolute left-0 top-1 w-full px-20 text-center text-white transition-transform duration-1200 ease-in-out">
 
                 <h3>Don't have an account? Please Sign up!<h3>
             </div>
-            <div class="img__text m--in z-10 absolute left-0 top-20 w-full px-20 text-center text-white transition-transform duration-1200 ease-in-out">
+            <div class="img__text m--in z-10 absolute left-0 top-1 w-full px-20 text-center text-white transition-transform duration-1200 ease-in-out">
 
                 <h3>If you already has an account, just sign in.<h3>
             </div>
