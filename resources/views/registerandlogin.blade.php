@@ -239,17 +239,11 @@
         }
 
         .cont.s--signup .sign-in {
-            -webkit-transition-timing-function: ease-in-out;
             transition-timing-function: ease-in-out;
-            -webkit-transition-duration: 1.2s;
             transition-duration: 1.2s;
-            -webkit-transform: translate3d(640px, 0, 0);
             transform: translate3d(640px, 0, 0);
         }
 
-        .sign-up {
-            transform: translate3d(-900px, 0, 0);
-        }
 
         .cont.s--signup .sign-up {
             transform: translate3d(0, 0, 0);
@@ -292,7 +286,7 @@
                     <span class="m--in">Sign In</span>
                 </div>
             </div>
-            <div class="form sign-up">
+            <div class="form sign-up transform translate-x-[-900px]">
                 <h2 class="w-full text-2xl text-center">Create your Account</h2>
                 <label class="label">
                     <span class="labelSpan">Name</span>
