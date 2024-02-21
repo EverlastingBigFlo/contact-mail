@@ -215,25 +215,6 @@
         }
 
 
-
-
-
-
-
-
-
-/* 
-        .fb-btn {
-            border: 2px solid #d3dae9;
-            color: #8fa1c7;
-        }
-
-        .fb-btn span {
-            font-weight: bold;
-            color: #455a81;
-        } */
-
-
         .cont.s--signup .sign-up {
             transform: translate3d(0, 0, 0);
         }
