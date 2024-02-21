@@ -9,7 +9,7 @@ export default {
     extend: {
       fontFamily:{
         Fredoka:["Fredoka", sans-serif],
-        kode:[ "Kode Mono", monospace]
+        // kode:[ "Kode Mono", monospace]
       }
     },
   },
