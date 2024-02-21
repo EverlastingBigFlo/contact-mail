@@ -238,11 +238,11 @@
             transition-timing-function: ease-out;
         }
 
-        .cont.s--signup .sign-in {
+        /* .cont.s--signup .sign-in {
             transition-timing-function: ease-in-out;
             transition-duration: 1.2s;
             transform: translate3d(640px, 0, 0);
-        }
+        } */
 
 
         .cont.s--signup .sign-up {
