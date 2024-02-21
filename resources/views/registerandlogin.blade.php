@@ -297,7 +297,7 @@
 <div class="cont">
     {{-- for login page --}}
     <div class="form sign-in">
-        <h2>Welcome</h2>
+        <h2 class="font-kode">Welcome</h2>
         <label>
             <span>Email</span>
             <input type="email" />
