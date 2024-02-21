@@ -199,9 +199,9 @@
             transition: transform 1.2s, -webkit-transform 1.2s;
         }
 
-        .img__btn span.m--in {
+        /* .img__btn span.m--in {
             transform: translateY(-72px);
-        }
+        } */
 
         .cont.s--signup .img__btn span.m--in {
             transform: translateY(0);
@@ -250,7 +250,7 @@
                 </div>
                 <div class="img__btn">
                     <span class="m--up">Sign Up</span>
-                    <span class="m--in transform -translate-y-72">Sign In</span>
+                    <span class="m--in transform -translate-y-[72px]">Sign In</span>
                 </div>
             </div>
             <div class="form sign-up transform translate-x-[-900px]">
