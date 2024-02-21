@@ -246,16 +246,7 @@
                 </div>
                 <div
                     class="img__btn elative overflow-hidden z-10 flex items-center justify-center w-100 h-36 mx-auto 
-                    bg-transparent text-white uppercase text-lg cursor-pointer after:content-['']">
-                    content: '';
-                    z-index: 2;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    border: 2px solid #fff;
-                    border-radius: 30px;
+                    bg-transparent text-white uppercase text-lg cursor-pointer ">
                     <span class="m--up">Sign Up</span>
                     <span class="m--in transform -translate-y-[72px]">Sign In</span>
                 </div>
