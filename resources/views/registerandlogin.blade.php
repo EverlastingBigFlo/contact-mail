@@ -155,7 +155,7 @@
             transform: translateX(0);
         }
 
-        .img__btn {
+        /* .img__btn {
             overflow: hidden;
             z-index: 2;
             position: relative;
@@ -179,7 +179,7 @@
             height: 100%;
             border: 2px solid #fff;
             border-radius: 30px;
-        }
+        } */
 
         .img__btn span {
             position: absolute;
@@ -244,7 +244,7 @@
 
                     <h3>If you already has an account, just sign in.<h3>
                 </div>
-                <div class="img__btn">
+                <div class="img__btn elative overflow-hidden z-10 flex items-center justify-center w-100 h-36 mx-auto bg-transparent text-white uppercase text-lg cursor-pointer absolute inset-0 border-2 border-white rounded-full">
                     <span class="m--up">Sign Up</span>
                     <span class="m--in transform -translate-y-[72px]">Sign In</span>
                 </div>
