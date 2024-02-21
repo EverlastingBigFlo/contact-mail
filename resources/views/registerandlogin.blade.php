@@ -294,7 +294,7 @@
 
 <br>
 <br>
-<div class="cont font">
+<div class="cont font-Fredoka">
     {{-- for login page --}}
     <div class="form sign-in">
         <h2 class="font-kode">Welcome</h2>
