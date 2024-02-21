@@ -305,7 +305,7 @@
             <input type="password" />
         </label>
         <p class="mt-[15px] text-center text-sm text-[#cfcfcf]">Forgot password?</p>
-        <button type="button" class=" mt-[40px] mb-[20px] bg-[d4af7a] uppercase">Sign In</button>
+        <button type="button" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign In</button>
 
     </div>
     <div class="sub-cont">
@@ -337,7 +337,7 @@
                 <span>Password</span>
                 <input type="password" />
             </label>
-            <button type="button" class=" mt-[40px] mb-[20px] bg-[d4af7a] uppercase">Sign Up</button>
+            <button type="button" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign Up</button>
 
         </div>
     </div>
