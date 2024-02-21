@@ -144,10 +144,7 @@
         font-weight: normal;
     }
 
-    .img__text p {
-        font-size: 14px;
-        line-height: 1.5;
-    }
+
 
     .cont.s--signup .img__text.m--up {
         -webkit-transform: translateX(520px);
