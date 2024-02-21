@@ -125,7 +125,20 @@
     }
 
    
-
+    .img__text {
+                z-index: 2;
+                position: absolute;
+                left: 0;
+                top: 50px;
+                width: 100%;
+                padding: 0 20px;
+                text-align: center;
+                color: #fff;
+                -webkit-transition: -webkit-transform 1.2s ease-in-out;
+                transition: -webkit-transform 1.2s ease-in-out;
+                transition: transform 1.2s ease-in-out;
+                transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+            }
  
 
 
@@ -268,25 +281,12 @@
     </div>
     <div class="sub-cont">
         <div class="img">
-            .img__text {
-                z-index: 2;
-                position: absolute;
-                left: 0;
-                top: 50px;
-                width: 100%;
-                padding: 0 20px;
-                text-align: center;
-                color: #fff;
-                -webkit-transition: -webkit-transform 1.2s ease-in-out;
-                transition: -webkit-transform 1.2s ease-in-out;
-                transition: transform 1.2s ease-in-out;
-                transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
-            }
-            <div class="img__text m--up ">
+         
+            <div class="img__text m--up z-2 absolute left-0 top-20 w-full px-20 text-center text-white transition-transform duration-1200 ease-in-out">
 
                 <h3>Don't have an account? Please Sign up!<h3>
             </div>
-            <div class="img__text m--in z-2">
+            <div class="img__text m--in z-2 absolute left-0 top-20 w-full px-20 text-center text-white transition-transform duration-1200 ease-in-out">
 
                 <h3>If you already has an account, just sign in.<h3>
             </div>
