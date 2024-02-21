@@ -290,20 +290,12 @@
         <h2>Welcome</h2>
         <label>
             <span>Email</span>
-            input {
-                display: block;
-                width: 100%;
-                margin-top: 5px;
-                padding-bottom: 5px;
-                font-size: 16px;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-                text-align: center;
-            }
-            <input type="email" />
+         
+            <input class="input" type="email" />
         </label>
         <label>
             <span>Password</span>
-            <input type="password" />
+            <input class="input" type="password" />
         </label>
         <p class="mt-[15px] text-center text-sm text-[#cfcfcf]">Forgot password?</p>
         <button type="button" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign In</button>
@@ -328,15 +320,15 @@
             <h2>Create your Account</h2>
             <label>
                 <span>Name</span>
-                <input type="text" />
+                <input class="input" type="text" />
             </label>
             <label>
                 <span>Email</span>
-                <input type="email" />
+                <input class="input" type="email" />
             </label>
             <label>
                 <span>Password</span>
-                <input type="password" />
+                <input class="input" type="password" />
             </label>
             <button type="button" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign Up</button>
 
