@@ -8,8 +8,8 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        Fredoka:["Fredoka", sans-serif],
-        kode:[ "Kode Mono", monospace]
+        Fredoka:["Fredoka", "sans-serif"],
+        kode:[ "Kode Mono", "monospace"]
       }
     },
   },
