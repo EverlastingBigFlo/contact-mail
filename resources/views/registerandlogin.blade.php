@@ -205,7 +205,6 @@
         }
 
         .cont.s--signup .img__btn span.m--in {
-            -webkit-transform: translateY(0);
             transform: translateY(0);
         }
 
