@@ -7,10 +7,6 @@
         padding: 0;
     }
 
-    body {
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-        background: #ffffff;
-    }
 
     input,
     button {
