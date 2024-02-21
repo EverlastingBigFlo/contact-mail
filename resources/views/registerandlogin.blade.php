@@ -316,7 +316,7 @@
             background: #d4af7a;
             text-transform: uppercase;
         }
-        <button type="button" class=" mt-[40px] mb-[20px] bg-[d4af7a] ">Sign In</button>
+        <button type="button" class=" mt-[40px] mb-[20px] bg-[d4af7a] text-uppercase">Sign In</button>
 
     </div>
     <div class="sub-cont">
@@ -348,7 +348,7 @@
                 <span>Password</span>
                 <input type="password" />
             </label>
-            <button type="button" class=" mt-[40px] mb-[20px] bg-[d4af7a] ">Sign Up</button>
+            <button type="button" class=" mt-[40px] mb-[20px] bg-[d4af7a] text-uppercase">Sign Up</button>
 
         </div>
     </div>
