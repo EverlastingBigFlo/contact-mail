@@ -199,10 +199,6 @@
             transition: transform 1.2s, -webkit-transform 1.2s;
         }
 
-        /* .img__btn span.m--in {
-            transform: translateY(-72px);
-        } */
-
         .cont.s--signup .img__btn span.m--in {
             transform: translateY(0);
         }
