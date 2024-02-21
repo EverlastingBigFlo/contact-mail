@@ -12,5 +12,5 @@ url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700
 @apply block w-[260px] mt-25 mx-auto text-center};
 
 .labelSpan{
-@apply text-sm text-[#cfcfcf] uppercase
-}
+@apply text-sm text-[#cfcfcf] uppercase};
+

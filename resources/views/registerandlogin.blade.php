@@ -279,12 +279,12 @@
         <h2>Welcome</h2>
       
         <label class="label">
-            <span>Email</span>
+            <span class="labelSpan">Email</span>
          
             <input class="input" type="email" />
         </label>
         <label class="label">
-            <span>Password</span>
+            <span class="labelSpan">Password</span>
             <input class="input" type="password" />
         </label>
         <p class="mt-[15px] text-center text-sm text-[#cfcfcf]">Forgot password?</p>
