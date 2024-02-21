@@ -309,15 +309,15 @@
         <div class="form sign-up">
             <h2>Create your Account</h2>
             <label class="label">
-                <span>Name</span>
+                <span class="labelSpan">Name</span>
                 <input class="input" type="text" />
             </label>
             <label class="label">
-                <span>Email</span>
+                <span class="labelSpan">Email</span>
                 <input class="input" type="email" />
             </label>
             <label class="label">
-                <span>Password</span>
+                <span class="labelSpan">Password</span>
                 <input class="input" type="password" />
             </label>
             <button type="button" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign Up</button>
