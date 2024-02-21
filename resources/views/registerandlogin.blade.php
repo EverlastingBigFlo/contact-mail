@@ -252,7 +252,7 @@
                 </div>
                 <div class="img__btn">
                     <span class="m--up">Sign Up</span>
-                    <span class="m--in">Sign In</span>
+                    <span class="m--in transform translate-y-0">Sign In</span>
                 </div>
             </div>
             <div class="form sign-up transform translate-x-[-900px]">
