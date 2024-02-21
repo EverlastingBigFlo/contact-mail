@@ -304,13 +304,7 @@
             <span>Password</span>
             <input type="password" />
         </label>
-        .forgot-pass {
-            margin-top: 15px;
-            text-align: center;
-            font-size: 12px;
-            color: ;
-        }
-        <p class="mt-[15px] text-center text-sm text-[]">Forgot password?</p>
+        <p class="mt-[15px] text-center text-sm text-[#cfcfcf]">Forgot password?</p>
         <button type="button" class=" mt-[40px] mb-[20px] bg-[d4af7a] uppercase">Sign In</button>
 
     </div>
