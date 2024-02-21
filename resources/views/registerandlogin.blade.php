@@ -100,12 +100,9 @@
             top: 0;
             width: 900px;
             height: 100%;
-            background-image: url("ext.jpg");
             opacity: .8;
             background-size: cover;
-            -webkit-transition: -webkit-transform 1.2s ease-in-out;
             transition: transform 1.2s ease-in-out;
-            transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
         }
 
         .img:after {
@@ -115,7 +112,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background: black;
+            background: #111827;
         }
 
         .cont.s--signup .img:before {
