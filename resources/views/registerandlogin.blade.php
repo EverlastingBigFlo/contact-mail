@@ -252,12 +252,7 @@
         text-align: center;
     }
 
-    .forgot-pass {
-        margin-top: 15px;
-        text-align: center;
-        font-size: 12px;
-        color: #cfcfcf;
-    }
+
 
  
 
@@ -310,13 +305,7 @@
             <input type="password" />
         </label>
         <p class="forgot-pass">Forgot password?</p>
-        .submit {
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background: #d4af7a;
-            text-transform: uppercase;
-        }
-        <button type="button" class=" mt-[40px] mb-[20px] bg-[d4af7a] text-uppercase">Sign In</button>
+        <button type="button" class=" mt-[40px] mb-[20px] bg-[d4af7a] uppercase">Sign In</button>
 
     </div>
     <div class="sub-cont">
@@ -348,7 +337,7 @@
                 <span>Password</span>
                 <input type="password" />
             </label>
-            <button type="button" class=" mt-[40px] mb-[20px] bg-[d4af7a] text-uppercase">Sign Up</button>
+            <button type="button" class=" mt-[40px] mb-[20px] bg-[d4af7a] uppercase">Sign Up</button>
 
         </div>
     </div>
