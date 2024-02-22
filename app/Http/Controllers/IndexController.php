@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Jobs\MailSender;
 use App\Mail\SendMail;
 use Illuminate\Auth\Events\Validated;
+use Illuminate\Http\Client\Request as ClientRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -50,6 +51,13 @@ class IndexController extends Controller
     }
 
     // get login request and validate the post
-    
+    public function signInCommand(Request $request)
+    {
+        // rules to validate my login form
+        $request->validate([
+            "email"=>"required|email",
+            "password"=>"required"
+        ]);
+    }
     
 }
