@@ -63,14 +63,14 @@ class IndexController extends Controller
 
 
     // get login request and validate the post
-    // public function signInCommand(Request $request)
-    // {
-    //     // rules to validate my login form
-    //     $request->validate([
-    //         "email"=>"required|email",
-    //         "password"=>"required"
-    //     ]);
-    // }
+    public function signInCommand(Request $request)
+    {
+        // rules to validate my login form
+        $request->validate([
+            "email"=>"required|email",
+            "password"=>"required"
+        ]);
+    }
     
 
 }

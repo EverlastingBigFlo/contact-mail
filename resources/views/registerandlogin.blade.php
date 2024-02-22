@@ -87,7 +87,7 @@
                             @enderror
                         </small>
                     </label>
-                    <button type="submit" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign Up</button>
+                    <button type="submi" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign Up</button>
 
                 </form>
             </div>
