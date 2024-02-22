@@ -120,6 +120,17 @@
         }
 
 
+        .img__text {
+            position: absolute;
+            left: 0;
+            top: 50px;
+            width: 100%;
+            padding: 0 20px;
+            text-align: center;
+            color: #fff;
+            transition: transform 1.2s ease-in-out;
+        }
+
 
 
         .cont.s--signup .img__text.m--up {
@@ -206,6 +217,17 @@
         <div class="sub-cont">
             <div class="img">
                 <div
+                .img__text {
+                    position: absolute;
+                    left: 0;
+                    top: 50px;
+                    width: 100%;
+                    padding: 0 20px;
+                    text-align: center;
+                    color: #fff;
+                    transition: transform 1.2s ease-in-out;
+                }
+        
                     class="img__text m--up z-10 absolute w-full px-20 text-center 
                     
                     text-white transition-transform duration-1200 ease-in-out">
