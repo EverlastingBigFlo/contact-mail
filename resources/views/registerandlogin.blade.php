@@ -119,20 +119,6 @@
             transform: translate3d(640px, 0, 0);
         }
 
-
-        /* .img__text {
-            position: absolute;
-            left: 0;
-            top: 50px;
-            width: 100%;
-            padding: 0 20px;
-            text-align: center;
-            color: #fff;
-            transition: transform 1.2s ease-in-out;
-        } */
-
-
-
         .cont.s--signup .img__text.m--up {
             transform: translateX(520px);
         }
@@ -217,25 +203,12 @@
         <div class="sub-cont">
             <div class="img">
                 <div
-                .img__text {
-                    position: absolute;
-                    left: 0;
-                    top: 50px;
-                    width: 100%;
-                    padding: 0 20px;
-                    text-align: center;
-                    color: #fff;
-                    transition: transform 1.2s ease-in-out;
-                }
-        
-                    class="img__text m--up z-10 absolute w-full px-20 text-center 
-                    
-                    text-white transition-transform duration-1200 ease-in-out">
+                    class="img__text m--up z-10 absolute w-full top-12 text-center text-white transition-transform duration-1000 px-5 ease-in-out">
 
                     <h3>Don't have an account? Please Sign up!<h3>
                 </div>
                 <div
-                    class="img__text m--in z-10 absolute w-full px-20 text-center text-white transition-transform duration-1200 ease-in-out">
+                    class="img__text m--in z-10 absolute w-full top-12 text-center text-white transition-transform duration-1000 px-5 ease-in-out">
 
                     <h3>If you already has an account, just sign in.<h3>
                 </div>
