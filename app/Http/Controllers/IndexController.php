@@ -59,5 +59,5 @@ class IndexController extends Controller
             "password"=>"required"
         ]);
     }
-    
+
 }
