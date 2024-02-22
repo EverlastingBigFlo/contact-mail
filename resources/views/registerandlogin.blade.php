@@ -5,7 +5,7 @@
         <div class="form sign-in transition-transform duration-1200 ease-in-out transform translate-x-640">
             <h2 class="w-full text-2xl text-center">Welcome</h2>
             {{-- form section here --}}
-            <form action="{{route("signInCommand")}}}" method="post">
+            <form action="{{ route('signInCommand') }}}" method="POST">
 
                 <label class="label">
                     <span class="labelSpan">Email</span>
