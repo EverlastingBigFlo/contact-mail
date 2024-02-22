@@ -155,18 +155,6 @@
             border-radius: 30px;
         }
 
-        /* .img__btn span {
-            position: absolute;
-            left: 0;
-            top: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            transition: transform 1.2s;
-        } */
-
         .cont.s--signup .img__btn span.m--in {
             transform: translateY(0);
         }
