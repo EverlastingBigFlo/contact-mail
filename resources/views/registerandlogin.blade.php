@@ -56,19 +56,34 @@
             </div>
             <div class="form sign-up transform translate-x-[-900px]">
 
-                <form action="SignUpCommand" method="post">
+                <form action="{{ route("SignUpCommand")}}" method="post">
                     <h2 class="w-full text-2xl text-center">Create your Account</h2>
                     <label class="label">
                         <span class="labelSpan">Your Name</span>
                         <input name="name" class="input" type="text" value="{{ old('name') }}" />
+                        <small style="color: red">
+                            @error('name')
+                                {{$message}}
+                            @enderror
+                        </small>
                     </label>
                     <label class="label">
                         <span class="labelSpan">Email</span>
                         <input class="input" type="email" name="email" value="{{ old('email') }}" />
+                        <small style="color: red">
+                            @error('email')
+                                {{$message}}
+                            @enderror
+                        </small>
                     </label>
                     <label class="label">
                         <span class="labelSpan">Password</span>
                         <input class="input" type="password" name="password" value="{{ old('password') }}" />
+                        <small style="color: red">
+                            @error('password')
+                                {{$message}}
+                            @enderror
+                        </small>
                     </label>
                     <button type="submit" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign Up</button>
 
