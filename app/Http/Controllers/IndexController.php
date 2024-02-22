@@ -59,13 +59,6 @@ class IndexController extends Controller
             "password"=>"required"
         ]);
     }
-    public function SignUpCommand(Request $request)
-    {
-        // rules to validate my login form
-        $request->validate([
-            "email"=>"required|email",
-            "password"=>"required"
-        ]);
-    }
+    
 
 }
