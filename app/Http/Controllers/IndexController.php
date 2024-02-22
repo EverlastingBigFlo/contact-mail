@@ -48,5 +48,8 @@ class IndexController extends Controller
     {
         return view('registerandlogin');
     }
+
+    // get login request and validate the post
+    
     
 }
