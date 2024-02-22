@@ -1,22 +1,32 @@
 @extends('layouts/layouts')
 
 @section('content')
-
-
     <div class="cont font-kode">
         <div class="form sign-in transition-transform duration-1200 ease-in-out transform translate-x-640">
             <h2 class="w-full text-2xl text-center">Welcome</h2>
+            {{-- form section here --}}
             <form action="signInCommand" method="post">
+
                 <label class="label">
                     <span class="labelSpan">Email</span>
-                    <input class="input" type="email" name="email"/>
+                    <input class="input" type="email" name="email" value="{{ old('email') }}" />
+                    <small style="color: red">
+                        @error('email')
+                            {{ $message }}
+                        @enderror
+                    </small>
                 </label>
-    
+
                 <label class="label">
                     <span class="labelSpan">Password</span>
-                    <input class="input" type="password" name="password"/>
+                    <input class="input" type="password" name="password" value="{{ old('password') }}" />
+                    <small style="color: red">
+                        @error('password')
+                            {{ $message }}
+                        @enderror
+                    </small>
                 </label>
-                
+
                 <p class="mt-[15px] text-center text-sm text-[#cfcfcf]">Forgot password?</p>
                 <button type="button" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign In</button>
             </form>
@@ -35,8 +45,12 @@
                     <h3>If you already has an account, just sign in.<h3>
                 </div>
                 <div class="img__btn">
-                    <span class="m--up absolute left-0 top-0 flex justify-center items-center w-full h-full transform duration-1000">Sign Up</span>
-                    <span class="m--in absolute left-0 top-0 flex justify-center items-center w-full h-full  duration-1000 transform -translate-y-[72px]">Sign In</span>
+                    <span
+                        class="m--up absolute left-0 top-0 flex justify-center items-center w-full h-full transform duration-1000">Sign
+                        Up</span>
+                    <span
+                        class="m--in absolute left-0 top-0 flex justify-center items-center w-full h-full  duration-1000 transform -translate-y-[72px]">Sign
+                        In</span>
                 </div>
             </div>
             <div class="form sign-up transform translate-x-[-900px]">
