@@ -201,9 +201,6 @@
                     <h3>If you already has an account, just sign in.<h3>
                 </div>
                 <div class="img__btn">
-                    .cont.s--signup .img__btn span.m--in {
-                        transform: translateY(0);
-                    }
                     <span class="m--up absolute left-0 top-0 flex justify-center items-center w-full h-full transform duration-1000">Sign Up</span>
                     <span class="m--in absolute left-0 top-0 flex justify-center items-center w-full h-full  duration-1000 transform -translate-y-[72px]">Sign In</span>
                 </div>
