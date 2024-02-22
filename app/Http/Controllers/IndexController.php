@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\MailSender;
 use App\Mail\SendMail;
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
@@ -35,7 +36,7 @@ class IndexController extends Controller
         $data = $request->all('name', 'email', 'message');
     
         // Redirect to contactcont route with the data
-        Mail::to('anjorin199@gmail.com')->send(new SendMail($data));
+       dispatch(new MailSender($data));
 
         return view('thankyou');
 
