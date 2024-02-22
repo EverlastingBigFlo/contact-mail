@@ -44,10 +44,8 @@
             position: relative;
             width: 640px;
             height: 100%;
-            -webkit-transition: -webkit-transform 1.2s ease-in-out;
-            transition: -webkit-transform 1.2s ease-in-out;
-            transition: transform 1.2s ease-in-out;
-            transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+            transition: transform 1.2s ease-in-out, 
+            -webkit-transform 1.2s ease-in-out;
             padding: 50px 30px 0;
         }
 
