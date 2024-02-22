@@ -56,7 +56,7 @@
             </div>
             <div class="form sign-up transform translate-x-[-900px]">
 
-                <form action="{{ route('SignUpCommand') }}" method="POST">
+                {{-- <form action="{{ route('SignUpCommand') }}" method="POST"> --}}
 
                     @csrf
                     <h2 class="w-full text-2xl text-center">Create your Account</h2>
