@@ -28,7 +28,7 @@
                 </label>
 
                 <p class="mt-[15px] text-center text-sm text-[#cfcfcf]">Forgot password?</p>
-                <button type="button" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign In</button>
+                <button type="submit" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign In</button>
             </form>
 
         </div>
