@@ -50,6 +50,18 @@ class IndexController extends Controller
         return view('registerandlogin');
     }
 
+    // get the sign up request 
+    public function SignUpCommand(Request $request)
+    {
+        // rules to validate my signup form
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|confirmed|min:6',
+        ]);
+    }
+
+
     // get login request and validate the post
     public function signInCommand(Request $request)
     {
