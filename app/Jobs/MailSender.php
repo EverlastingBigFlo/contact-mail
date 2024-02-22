@@ -4,7 +4,7 @@ namespace App\Jobs;
 
 use App\Mail\SendMail;
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Mail\Mailer;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
@@ -27,6 +27,6 @@ class MailSender implements ShouldQueue
      */
     public function handle(): void
     {
-        Mailer::to('anjorin199@gmail.com')->send(new SendMail($this->data));
+        Mail::to('anjorin199@gmail.com')->send(new SendMail($this->data));
     }
 }
