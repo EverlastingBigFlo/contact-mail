@@ -120,7 +120,7 @@
         }
 
 
-        .img__text {
+        /* .img__text {
             position: absolute;
             left: 0;
             top: 50px;
@@ -129,7 +129,7 @@
             text-align: center;
             color: #fff;
             transition: transform 1.2s ease-in-out;
-        }
+        } */
 
 
 
