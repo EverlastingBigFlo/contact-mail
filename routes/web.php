@@ -32,10 +32,10 @@ Route::post('/contact', [IndexController::class, 'contactCommand'])->name('conta
 
 Route::get('/registerandlogin', [IndexController::class, 'registerandlogin'])->name('contact');
 
-// to submit sign up form
-Route::post('registerandlogin',[IndexController::class, 'SignUpCommand'])->name('SignUpCommand');
-
 // to submit login form
 Route::post('registerandlogin',[IndexController::class, 'signInCommand'])->name('signInCommand');
+
+// to submit login form
+// Route::post('registerandlogin',[IndexController::class, 'signInCommand'])->name('signInCommand');
 
 

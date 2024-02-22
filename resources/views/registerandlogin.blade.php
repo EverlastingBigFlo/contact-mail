@@ -5,7 +5,7 @@
         <div class="form sign-in transition-transform duration-1200 ease-in-out transform translate-x-640">
             <h2 class="w-full text-2xl text-center">Welcome</h2>
             {{-- form section here --}}
-            <form action="{{ route('signInCommand') }}}" method="POST">
+            {{-- <form action="{{ route('signInCommand') }}}" method="POST"> --}}
                 @csrf
 
                 <label class="label">
@@ -29,7 +29,7 @@
                 </label>
 
                 <p class="mt-[15px] text-center text-sm text-[#cfcfcf]">Forgot password?</p>
-                <button type="submit" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign In</button>
+                <button type="button" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign In</button>
             </form>
 
         </div>
