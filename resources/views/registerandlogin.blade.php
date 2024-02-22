@@ -6,19 +6,21 @@
     <div class="cont font-kode">
         <div class="form sign-in transition-transform duration-1200 ease-in-out transform translate-x-640">
             <h2 class="w-full text-2xl text-center">Welcome</h2>
-
-            <label class="label">
-                <span class="labelSpan">Email</span>
-                <input class="input" type="email" />
-            </label>
-
-            <label class="label">
-                <span class="labelSpan">Password</span>
-                <input class="input" type="password" />
-            </label>
-            
-            <p class="mt-[15px] text-center text-sm text-[#cfcfcf]">Forgot password?</p>
-            <button type="button" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign In</button>
+            <form action="signInCommand" method="post">
+                <label class="label">
+                    <span class="labelSpan">Email</span>
+                    <input class="input" type="email" />
+                </label>
+    
+                <label class="label">
+                    <span class="labelSpan">Password</span>
+                    <input class="input" type="password" />
+                </label>
+                
+                <p class="mt-[15px] text-center text-sm text-[#cfcfcf]">Forgot password?</p>
+                <button type="button" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign In</button>
+                
+            </form>
 
         </div>
         <div class="sub-cont">
