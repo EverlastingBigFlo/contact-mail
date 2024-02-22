@@ -14,7 +14,7 @@
     
                 <label class="label">
                     <span class="labelSpan">Password</span>
-                    <input class="input" type="password" />
+                    <input class="input" type="password" name="password"/>
                 </label>
                 
                 <p class="mt-[15px] text-center text-sm text-[#cfcfcf]">Forgot password?</p>
