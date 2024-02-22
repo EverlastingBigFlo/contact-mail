@@ -36,6 +36,6 @@ Route::get('/registerandlogin', [IndexController::class, 'registerandlogin'])->n
 Route::post('registerandlogin',[IndexController::class, 'SignUpCommand'])->name('SignUpCommand');
 
 // to submit login form
-Route::post('registerandlogin',[IndexController::class, 'signInCommand'])->name('signInCommand');
+// Route::post('registerandlogin',[IndexController::class, 'signInCommand'])->name('signInCommand');
 
 
