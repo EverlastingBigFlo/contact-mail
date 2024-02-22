@@ -12,8 +12,8 @@
                     <span class="labelSpan">Email</span>
                     <input class="input" type="email" name="email" value="{{ old('email') }}" />
                     <small style="color: red">
-                        @error('email')
-                            {{ $message }}
+                        @error('name')
+                            {{$message}}
                         @enderror
                     </small>
                 </label>
@@ -22,8 +22,8 @@
                     <span class="labelSpan">Password</span>
                     <input class="input" type="password" name="password" value="{{ old('password') }}" />
                     <small style="color: red">
-                        @error('password')
-                            {{ $message }}
+                        @error('email')
+                            {{$message}}
                         @enderror
                     </small>
                 </label>
