@@ -56,7 +56,8 @@
             </div>
             <div class="form sign-up transform translate-x-[-900px]">
 
-                <form action="{{ route("SignUpCommand")}}" method="post">
+                <form action="{{ route('SignUpCommand') }}" method="post">
+                    @csrf
                     <h2 class="w-full text-2xl text-center">Create your Account</h2>
                     <label class="label">
                         <span class="labelSpan">Your Name</span>
