@@ -6,6 +6,7 @@
             <h2 class="w-full text-2xl text-center">Welcome</h2>
             {{-- form section here --}}
             <form action="{{ route('signInCommand') }}}" method="POST">
+                @csrf
 
                 <label class="label">
                     <span class="labelSpan">Email</span>
