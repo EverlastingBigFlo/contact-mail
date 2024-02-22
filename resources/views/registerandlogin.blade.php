@@ -55,21 +55,24 @@
                 </div>
             </div>
             <div class="form sign-up transform translate-x-[-900px]">
-                <h2 class="w-full text-2xl text-center">Create your Account</h2>
-                <label class="label">
-                    <span class="labelSpan">Name</span>
-                    <input class="input" type="text" />
-                </label>
-                <label class="label">
-                    <span class="labelSpan">Email</span>
-                    <input class="input" type="email" />
-                </label>
-                <label class="label">
-                    <span class="labelSpan">Password</span>
-                    <input class="input" type="password" />
-                </label>
-                <button type="button" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign Up</button>
 
+                <form action="SignUpCommand" method="post">
+                    <h2 class="w-full text-2xl text-center">Create your Account</h2>
+                    <label class="label">
+                        <span class="labelSpan">Your Name</span>
+                        <input name="name" class="input" type="text" value="{{ old('name') }}" />
+                    </label>
+                    <label class="label">
+                        <span class="labelSpan">Email</span>
+                        <input class="input" type="email" name="email" value="{{ old('email') }}" />
+                    </label>
+                    <label class="label">
+                        <span class="labelSpan">Password</span>
+                        <input class="input" type="password" name="password" value="{{ old('password') }}" />
+                    </label>
+                    <button type="submit" class=" mt-[40px] mb-[20px] bg-[#d4af7a] uppercase">Sign Up</button>
+
+                </form>
             </div>
         </div>
     </div>
